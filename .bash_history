@@ -294,10 +294,10 @@ npm install @nomicfoundation/hardhat-toolbox
 npx hardhat
 rm -f contracts/Lock.sol
 npm install --save-dev @nomicfoundation/hardhat-toolbox
--p b20c6d011de9dd01cad3c5a3329f63135358bbae0f20e00596e8a2c29c0684ef
+-p PRIVATE_KEY
 cd .env
 -p
--p b20c6d011de9dd01cad3c5a3329f63135358bbae0f20e00596e8a2c29c0684ef PRIVATE_KEY
+-p "PRIVATE_KEY" PRIVATE_KEY
 clear
 reset
 #!/bin/sh
@@ -347,7 +347,7 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 echo "Hardhat toolbox installed."
 # Création du fichier .env avec la clé privée
 echo "Creating .env file..."
-echo "PRIVATE_KEY=b20c6d011de9dd01cad3c5a3329f63135358bbae0f20e00596e8a2c29c0684ef" > .env
+echo "PRIVATE_KEY=PRIVATE_KEY" > .env
 echo ".env file created."
 # Configuration de Hardhat
 echo "Configuring Hardhat..."
@@ -544,4 +544,4 @@ echo "Installing Hardhat toolbox..."
 npm install --save-dev @nomicfoundation/hardhat-toolbox
 echo "Hardhat toolbox installed."
 echo "Creating .env file..."
-read -p "Enter your private key: " b20c6d011de9dd01cad3c5a3329f63135358bbae0f20e00596e8a2c29c0684ef
+read -p "Enter your private key: " PRIVATE_KEY
